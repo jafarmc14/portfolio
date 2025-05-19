@@ -36,34 +36,41 @@
     </div>
   </section>
 
-  <section class="max-w-4xl mx-auto px-4 py-12">
+  <section class="max-w-5xl mx-auto px-4 py-12">
     <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-6">Proyek</h2>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-600 hover:shadow-lg transition">
-        <h3 class="text-lg font-semibold text-cyan-400">Robot Line Follower</h3>
-        <p class="text-sm mt-2">Robot dengan sensor IR dan motor driver L298N. Menggunakan Arduino.</p>
-        <a href="#" class="text-cyan-300 underline text-sm mt-2 inline-block">Lihat Proyek</a>
+      <div class="bg-gray-800 rounded-lg overflow-hidden border border-cyan-600">
+        <img src="images/line-follower.jpg" alt="Robot Line Follower" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-cyan-400">Robot Line Follower</h3>
+          <p class="text-sm mt-2">Robot sensor IR & motor driver L298N. Pakai Arduino Uno.</p>
+        </div>
       </div>
-      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-600 hover:shadow-lg transition">
-        <h3 class="text-lg font-semibold text-cyan-400">IoT Monitoring Suhu</h3>
-        <p class="text-sm mt-2">ESP32 dan DHT22 mengirim data ke dashboard via MQTT.</p>
-        <a href="#" class="text-cyan-300 underline text-sm mt-2 inline-block">Lihat Proyek</a>
+      <div class="bg-gray-800 rounded-lg overflow-hidden border border-cyan-600">
+        <img src="images/suhu-iot.jpg" alt="IoT Monitoring Suhu" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-cyan-400">IoT Monitoring Suhu</h3>
+          <p class="text-sm mt-2">ESP32 & DHT22, kirim data ke MQTT Dashboard.</p>
+        </div>
       </div>
-      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-600 hover:shadow-lg transition">
-        <h3 class="text-lg font-semibold text-cyan-400">Lengan Robot 4 Axis</h3>
-        <p class="text-sm mt-2">Lengan robot yang dikendalikan dengan joystick dan servo motor.</p>
-        <a href="#" class="text-cyan-300 underline text-sm mt-2 inline-block">Lihat Proyek</a>
+      <div class="bg-gray-800 rounded-lg overflow-hidden border border-cyan-600">
+        <img src="images/arm-robot.jpg" alt="Lengan Robot" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-cyan-400">Lengan Robot 4 Axis</h3>
+          <p class="text-sm mt-2">Kontrol servo via joystick. Final project embedded.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="max-w-4xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-4">Kontak</h2>
-    <p>Email: kamu@email.com</p>
-    <p class="mt-2">
-      <a href="https://github.com/namamu" class="text-cyan-400 hover:underline" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/namamu" class="text-cyan-400 hover:underline" target="_blank">LinkedIn</a>
-    </p>
+  <section class="max-w-3xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-4">Kontak Saya</h2>
+    <form action="https://formspree.io/f/your_form_id" method="POST" class="space-y-4">
+      <input type="text" name="nama" placeholder="Nama" required class="w-full p-3 rounded bg-gray-800 text-white border border-cyan-500" />
+      <input type="email" name="email" placeholder="Email" required class="w-full p-3 rounded bg-gray-800 text-white border border-cyan-500" />
+      <textarea name="pesan" placeholder="Pesan Anda..." required rows="4" class="w-full p-3 rounded bg-gray-800 text-white border border-cyan-500"></textarea>
+      <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 text-black px-5 py-2 rounded">Kirim</button>
+    </form>
   </section>
 
   <footer class="text-center py-6 text-sm bg-gray-900 text-gray-400">
