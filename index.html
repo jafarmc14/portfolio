@@ -2,139 +2,72 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio Robotik & Elektronik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Robotik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #00fff7;
-      --secondary: #00c3ff;
-      --bg: #0a0a0a;
-      --card: #1a1a1a;
-      --text: #e0e0e0;
-    }
     body {
-      margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-    }
-    header {
-      text-align: center;
-      padding: 80px 20px 40px;
-      background: linear-gradient(to right, #000, #111);
-    }
-    header h1 {
-      font-size: 3em;
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-      color: var(--secondary);
-    }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    h2 {
-      color: var(--primary);
-      margin-bottom: 20px;
-      border-left: 4px solid var(--secondary);
-      padding-left: 10px;
-    }
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background-color: var(--card);
-      border: 1px solid var(--secondary);
-      border-radius: 10px;
-      padding: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px var(--primary);
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background-color: #111;
-      color: #777;
-    }
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .social a {
-      margin: 0 10px;
-      font-size: 20px;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Nama Kamu</h1>
-    <p>Robot Enthusiast | Embedded Developer | IoT Engineer</p>
+<body class="bg-gray-950 text-gray-100">
+
+  <header class="text-center py-16 bg-gradient-to-r from-gray-900 to-gray-800">
+    <h1 class="text-4xl md:text-5xl font-bold text-cyan-400">Nama Kamu</h1>
+    <p class="mt-4 text-cyan-300">Robot Enthusiast | Embedded Developer | IoT Engineer</p>
   </header>
 
-  <section>
-    <h2>Tentang Saya</h2>
-    <p>Saya memiliki ketertarikan besar dalam bidang teknologi, khususnya pengembangan sistem embedded, robotika, dan Internet of Things (IoT). Portfolio ini menampilkan beberapa proyek dan pencapaian saya dalam bidang tersebut.</p>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-4">Tentang Saya</h2>
+    <p>Saya berpengalaman dalam pengembangan sistem embedded, robotika, dan IoT. Di portfolio ini saya menampilkan proyek-proyek praktikal yang telah saya bangun.</p>
   </section>
 
-  <section>
-    <h2>Keahlian</h2>
-    <div class="skills">
-      <div class="card">Arduino & Microcontroller</div>
-      <div class="card">C/C++ Programming</div>
-      <div class="card">Sensor & Aktuator</div>
-      <div class="card">PCB Design (KiCad / Eagle)</div>
-      <div class="card">Raspberry Pi & Linux</div>
-      <div class="card">IoT & MQTT</div>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-6">Keahlian</h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-500">Arduino & Microcontroller</div>
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-500">C/C++ Programming</div>
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-500">PCB Design (KiCad, Eagle)</div>
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-500">Raspberry Pi</div>
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-500">Sensor & Aktuator</div>
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-500">IoT & MQTT</div>
     </div>
   </section>
 
-  <section>
-    <h2>Proyek</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Robot Line Follower</h3>
-        <p>Robot sederhana menggunakan sensor inframerah dan motor driver L298N. Dikendalikan dengan Arduino Uno.</p>
-        <a href="#">Lihat Proyek</a>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-6">Proyek</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-600 hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-cyan-400">Robot Line Follower</h3>
+        <p class="text-sm mt-2">Robot dengan sensor IR dan motor driver L298N. Menggunakan Arduino.</p>
+        <a href="#" class="text-cyan-300 underline text-sm mt-2 inline-block">Lihat Proyek</a>
       </div>
-      <div class="card">
-        <h3>Monitoring Suhu IoT</h3>
-        <p>Sensor DHT22 yang mengirim data ke dashboard melalui WiFi menggunakan ESP32 dan MQTT.</p>
-        <a href="#">Lihat Proyek</a>
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-600 hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-cyan-400">IoT Monitoring Suhu</h3>
+        <p class="text-sm mt-2">ESP32 dan DHT22 mengirim data ke dashboard via MQTT.</p>
+        <a href="#" class="text-cyan-300 underline text-sm mt-2 inline-block">Lihat Proyek</a>
       </div>
-      <div class="card">
-        <h3>Arm Robot 4 Axis</h3>
-        <p>Proyek lengan robotik dengan kontrol joystick dan servo. Dikembangkan untuk tugas akhir.</p>
-        <a href="#">Lihat Proyek</a>
+      <div class="bg-gray-800 p-4 rounded-lg border border-cyan-600 hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-cyan-400">Lengan Robot 4 Axis</h3>
+        <p class="text-sm mt-2">Lengan robot yang dikendalikan dengan joystick dan servo motor.</p>
+        <a href="#" class="text-cyan-300 underline text-sm mt-2 inline-block">Lihat Proyek</a>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Kontak</h2>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-4">Kontak</h2>
     <p>Email: kamu@email.com</p>
-    <div class="social">
-      <a href="https://github.com/namamu" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/namamu" target="_blank">LinkedIn</a> |
-      <a href="mailto:kamu@email.com">Email</a>
-    </div>
+    <p class="mt-2">
+      <a href="https://github.com/namamu" class="text-cyan-400 hover:underline" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/namamu" class="text-cyan-400 hover:underline" target="_blank">LinkedIn</a>
+    </p>
   </section>
 
-  <footer>
-    <p>© 2025 Nama Kamu. Dibuat dengan semangat teknologi dan kopi ☕</p>
+  <footer class="text-center py-6 text-sm bg-gray-900 text-gray-400">
+    &copy; 2025 Nama Kamu. Dibuat dengan Tailwind dan semangat teknologi ⚙️
   </footer>
 </body>
 </html>
